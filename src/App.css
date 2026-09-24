@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* Main Container */
+.app {
+  width: 600px;
+  max-width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #0da4df;
+  color: rgb(234, 9, 9);
+  padding: 40px 25px;
+  border-radius: 15px;
+}
+
+header h1 {
+  margin: 0 0 20px;
+  font-size: 32px;
+}
+
+header h1 span {
+  margin-left: 15px;
+}
+
+header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Student Card & Counter */
+.student-card,
+.counter {
+  background: white;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-card h2,
+.counter h2 {
+  margin-top: 0;
+}
+
+.counter p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 768px) {
+  .app {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 480px) {
+  .app {
+    width: 94%;
+    max-width: none;
+    margin: 20px auto;
+  }
+
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  header h1 span {
+    margin-left: 0;
+  }
+
+  header p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .student-card,
+  .counter {
+    padding: 20px 15px;
+  }
+
+  .student-card h2,
+  .counter h2 {
+    font-size: 20px;
+  }
+
+  .counter p {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 9px 15px;
+    font-size: 14px;
+  }
+}
